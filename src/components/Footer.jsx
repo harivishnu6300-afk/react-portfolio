@@ -2,40 +2,35 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-slate-950 border-t border-slate-800 py-8">
+    <footer className="bg-slate-950 border-t border-slate-700 py-8">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
 
-      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
-
-        <h2 className="text-cyan-400 text-2xl font-bold">
-          Hari Vishnu
-        </h2>
-
-        <p className="text-slate-400 mt-4 md:mt-0">
-          © 2026 All Rights Reserved.
+        <p className="text-slate-400 text-center">
+          © 2026 Hari Vishnu. All Rights Reserved.
         </p>
 
-        <div className="flex gap-6 text-2xl mt-4 md:mt-0">
+        <div className="flex gap-6 text-2xl">
 
           <a
-            href="https://github.com/your-github"
+            href="https://github.com/harivishnu6300-afk"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="text-slate-300 hover:text-cyan-400 transition"
           >
             <FaGithub />
           </a>
 
           <a
-            href="https://linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/barreedula-hari-vishnu-a73405308"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="text-slate-300 hover:text-cyan-400 transition"
           >
             <FaLinkedin />
           </a>
 
           <a
-            href="mailto:yourmail@gmail.com"
+            href="mailto:harivishnu6300@gmail.com"
             className="text-slate-300 hover:text-cyan-400 transition"
           >
             <FaEnvelope />
@@ -43,8 +38,11 @@ function Footer() {
 
         </div>
 
-      </div>
+        <p className="text-slate-500 text-center text-sm">
+          Made with ❤️ using React & Tailwind CSS
+        </p>
 
+      </div>
     </footer>
   );
 }
